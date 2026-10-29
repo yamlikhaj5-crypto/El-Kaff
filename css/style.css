@@ -1,0 +1,325 @@
+/* Warna utama website. Kamu bisa mengganti nilai warnanya di sini. */
+:root {
+    --warna-latar: #101010;
+    --warna-bagian: #191816;
+    --warna-emas: #d5a342;
+    --warna-teks: #f4eee4;
+    --warna-teks-redup: #b7ada0;
+    --warna-garis: #39332a;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--warna-latar);
+    color: var(--warna-teks);
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0b0b0b;
+    border-bottom: 1px solid var(--warna-garis);
+}
+
+.header-content {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--warna-emas);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.main-nav a {
+    color: var(--warna-teks);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-nav a:hover {
+    color: var(--warna-emas);
+}
+
+.menu-button {
+    display: none;
+    color: var(--warna-emas);
+    background: transparent;
+    border: 1px solid var(--warna-emas);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 22px;
+}
+
+.hero-section {
+    padding: 90px 0;
+    background:
+        radial-gradient(ellipse at 85% 40%, #332717 0, transparent 45%),
+        var(--warna-latar);
+}
+
+.eyebrow {
+    color: var(--warna-emas);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    max-width: 600px;
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.1;
+}
+
+h1 span,
+h2 span {
+    color: var(--warna-emas);
+}
+
+.hero-description,
+.section-description {
+    max-width: 550px;
+    color: var(--warna-teks-redup);
+    line-height: 1.8;
+}
+
+.gold-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: var(--warna-emas);
+    color: #17120a;
+    border: 0;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gold-button:hover {
+    background-color: #edc269;
+    color: #17120a;
+}
+
+.gold-button span {
+    margin-left: 12px;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    height: 420px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid var(--warna-emas);
+    border-radius: 200px 200px 4px 4px;
+}
+
+.image-caption {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    padding: 14px 18px;
+    background-color: #111;
+    color: var(--warna-teks);
+    border: 1px solid var(--warna-garis);
+    font-size: 13px;
+}
+
+.image-caption strong {
+    color: var(--warna-emas);
+}
+
+.content-section {
+    padding: 80px 0;
+    background-color: var(--warna-bagian);
+}
+
+.service-card {
+    height: 100%;
+    padding: 10px;
+    background-color: #111;
+    border: 1px solid var(--warna-garis);
+}
+
+.service-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.service-card-content {
+    padding: 16px 8px 8px;
+}
+
+.service-card h3 {
+    color: var(--warna-emas);
+}
+
+.service-card p {
+    color: var(--warna-teks-redup);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.about-section {
+    padding: 80px 0;
+    background-color: #211d17;
+}
+
+.about-image {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border: 1px solid var(--warna-emas);
+}
+
+.gold-text {
+    color: var(--warna-emas);
+}
+
+.contact-box {
+    max-width: 750px;
+    margin: auto;
+    padding: 35px;
+    background-color: #111;
+    border: 1px solid var(--warna-garis);
+}
+
+.form-label {
+    color: var(--warna-teks);
+}
+
+.form-control,
+.form-select {
+    color: var(--warna-teks);
+    background-color: #191816;
+    border-color: var(--warna-garis);
+}
+
+.form-control:focus,
+.form-select:focus {
+    color: white;
+    background-color: #191816;
+    border-color: var(--warna-emas);
+    box-shadow: 0 0 0 0.2rem #d5a34233;
+}
+
+.form-select option {
+    color: white;
+    background-color: #191816;
+}
+
+.form-message {
+    margin-top: 14px;
+    color: var(--warna-teks-redup);
+    font-size: 13px;
+}
+
+.site-footer {
+    padding: 25px 0 10px;
+    background-color: #080808;
+    border-top: 1px solid var(--warna-garis);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: var(--warna-teks-redup);
+    font-size: 13px;
+}
+
+.footer-content strong {
+    color: var(--warna-emas);
+}
+
+/* Tampilan tablet dan HP */
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-image-wrapper {
+        height: 340px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        padding: 18px 24px;
+        background-color: #0b0b0b;
+        border-bottom: 1px solid var(--warna-garis);
+    }
+
+    .main-nav.show {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .content-section,
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .contact-box {
+        padding: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 43px;
+    }
+
+    .hero-image-wrapper {
+        height: 280px;
+    }
+
+    .service-card img {
+        height: 240px;
+    }
+
+    .about-image {
+        height: 290px;
+    }
+}
